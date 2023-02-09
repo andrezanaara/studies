@@ -10,6 +10,11 @@ body {
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
 p,
 h1,
 h2,
@@ -17,7 +22,7 @@ h3 {
   margin: 0px;
 }
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.3;
 }
 .logo {
@@ -27,6 +32,11 @@ p {
 .bike {
   width: 100%;
 }
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+}
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -34,11 +44,16 @@ p {
   justify-content: center;
 }
 .menu a {
+  display: block;
   background: #ffffff;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   color: #000000;
   text-transform: uppercase;
+  border: 2px solid #fff;
+}
+.menu a:hover {
+  border-color: #e21;
 }
 .conteudo {
   display: grid;
@@ -55,38 +70,30 @@ p {
   align-content: center;
   justify-items: end;
 }
-.detalhe {
-  width: 60px;
-  height: 4px;
-  background: #e21;
-  position: absolute;
-  top: 30px;
-  right: -30px;
+.intro h1 {
+  font-size: 2rem;
+}
+.intro::before{
+  content: "";
+width: 60px;
+height: 4px;
+background: #e21;
+position: absolute;
+top: 30px;
+right: -30px;
 }
 .botao {
   background: #e21;
   color: #ffffff;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
-.vantagens-item {
-  margin-top: 16px;
-}
-.vantagens-item-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.vantagens-item-header h3 {
-  margin-left: 10px;
-}
-.vantagens-item-header img {
-  width: 40px;
-  height: 40px;
+.botao:hover{
+  background: #900;
 }
 .subtitulo {
-  font-size: 64px;
+  font-size: 4rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: right;
@@ -97,6 +104,28 @@ p {
   background: #ffffff;
   padding: 40px;
 }
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  border-left: 4px solid transparent;
+}
+.vantagens-item img {
+  width: 40px;
+  height: 40px;
+}
+.vantagens-item p {
+  grid-column: 2;
+}
+.vantagens-item:nth-child(odd) {
+  background: #f7f7f7;
+
+}
+.vantagens-item:hover{
+  border-color: #e21;
+}
+
 .rodape {
   background: #ffffff;
   width: 100%;
