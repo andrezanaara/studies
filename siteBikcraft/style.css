@@ -82,6 +82,10 @@ position: absolute;
 top: 30px;
 right: -30px;
 }
+.intro-cover img{
+  object-fit: cover;
+  height: 100%;
+}
 .botao {
   background: #e21;
   color: #ffffff;
@@ -132,4 +136,35 @@ right: -30px;
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+}
+@media (max-width: 1000px) {
+  .conteudo-vantagens{
+    grid-template-columns: 1fr;
+  }
+  .subtitulo{
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  body{
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .header{
+    gap: 30px;
+  }
+  .conteudo{
+    grid-template-columns: 1fr;
+  }
+  .intro{
+    text-align: left;
+    justify-items: start;
+  }
+  .intro::before{
+    display: none;
+  }
+  .subtitulo{
+    font-size: 3rem;
+  }
+  
 }
