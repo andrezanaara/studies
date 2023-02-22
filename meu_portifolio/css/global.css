@@ -1,0 +1,21 @@
+body {
+  margin: 0px;
+  font-family: "Fira Sans", Arial, sans-serif;
+  color: #141414;
+  margin-bottom: 1000px;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.subtitulo{
+  font-size: 8rem;
+  word-break: break-all;
+}
