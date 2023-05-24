@@ -1,6 +1,6 @@
 @import url(pokedex.css);
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
@@ -17,9 +17,9 @@ body {
 
 @media screen and (min-width: 992px) {
   .content {
-      max-width: 992px;
-      height: auto;
-      margin: 1rem auto;
-      border-radius: 1rem;
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
   }
 }
